@@ -1,0 +1,36 @@
+
+doctype html
+html
+   head
+      title = "Calculator!"
+      style.
+          body {
+              font-family: blue;
+              font-size: 20px;;
+              text-align:center;
+          }
+   body
+     h1 Calculator!
+     form(method='post' action='/calc')
+            br
+            div
+              h3 Operator
+              label
+                input(type='radio' value='1' name='operator[1]')
+                | Add
+              label
+                input(type='radio' value='2' name='operator[1]')
+                | Subtract
+              label
+                input(type='radio' value='3' name='operator[1]')
+                | Multiply
+              label
+                input(type='radio' value='4' name='operator[1]')
+                | Divide
+            br
+            br
+            input(type='number' name='firstnum' placeholder='Enter Your First Number' required='')
+            br
+            br
+            input(type='number' name='secondnum' placeholder='Enter Your Second Number' required='')
+            input(type='submit' value='Calculate')
